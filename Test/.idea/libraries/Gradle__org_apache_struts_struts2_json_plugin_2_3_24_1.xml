@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.struts:struts2-json-plugin:2.3.24.1">
+    <CLASSES>
+      <root url="jar://F:/gradle仓库/.gradle/caches/modules-2/files-2.1/org.apache.struts/struts2-json-plugin/2.3.24.1/9f256cffa114262e7b14c31c99c7aaf4d37e8fdb/struts2-json-plugin-2.3.24.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/gradle仓库/.gradle/caches/modules-2/files-2.1/org.apache.struts/struts2-json-plugin/2.3.24.1/904aff5d220dbea2ac7f56c48683214bee4a85d1/struts2-json-plugin-2.3.24.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

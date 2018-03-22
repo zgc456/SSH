@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    
+    <package name="default" extends="struts-default" namespace="/">
+        <!-- 访问answersSave.action跳到action 然后进入class的类文件 进行走重写方法 通过 返回值跳到页面 -->
+       <action name="answersSave" class="com.zheng.action.AnswersSaveAction"><!--method设置之后status会在方法中寻找
+        HelloWord或者doHeoolword（）方法-->
+        <result name="success">isOK.jsp</result>
+        <result name="error"  >b.jsp</result><!--type="redirect"相当于重定向，默认dispatcher转发 -->
+    </action>
+
+
+
+        <action name="questionsSelectAll" class="com.zheng.action.QuestionsSelectAllAction"><!--method设置之后status会在方法中寻找
+        HelloWord或者doHeoolword（）方法-->
+            <result name="success">a.jsp</result>
+            <result name="error"  >b.jsp</result><!--type="redirect"相当于重定向，默认dispatcher转发 -->
+        </action>
+    </package>
+    <include file="classpath:struts-questionselectAll.xml"/>
+   
+
+    <!--<include file=""/> 拆分配置文件-->
+    <!--  设置中文乱码问题 -->
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
+</struts>
